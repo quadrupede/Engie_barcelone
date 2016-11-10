@@ -1,0 +1,1061 @@
+<html>
+	<head>
+	<title>Engie</title>
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	</head>
+	<body id="body">
+		<div class="loader">
+				<img src="assets/images/loader.png" alt=""><br/><br/><br/><br/>
+				Touch to start
+		</div>
+		<div class="map__container">
+			<div class="map">
+				<div class="map__background"></div>
+				<div class="map__pays map__pays--1 hidden"></div>
+				<div class="map__pays map__pays--2 hidden"></div>
+				<div class="map__pays map__pays--3 hidden"></div>
+				<div class="map__pays map__pays--4 hidden"></div>
+				<div class="map__pays map__pays--5 hidden"></div>
+				<div class="map__pays map__pays--6 hidden"></div>
+				<div class="map__pays map__pays--7 hidden"></div>
+				<div class="map__pays map__pays--8 hidden"></div>
+				<div class="map__cloud map__cloud--1"></div>
+				<div class="map__cloud map__cloud--2"></div>
+				<div class="map__cloud map__cloud--3"></div>
+				<div class="map__cloud map__cloud--4"></div>
+				<div class="map__cloud map__cloud--5"></div>
+				<div class="map__cloud map__cloud--6"></div>
+				<div class="map__cloud map__cloud--7"></div>
+				<div class="map__cloud map__cloud--8"></div>
+				<div class="map__btn map__btn--1" data-save="France" data-cloud="cloud--1" data-open="pays--1" data-bg="map-1"></div>
+				<div class="map__btn map__btn--2" data-save="Belgique" data-cloud="cloud--2"  data-open="pays--2" data-bg="map-2"></div>
+				<div class="map__btn map__btn--3" data-save="Italie" data-cloud="cloud--3"  data-open="pays--3" data-bg="map-3"></div>
+				<div class="map__btn map__btn--4" data-save="Roumanie" data-cloud="cloud--4"  data-open="pays--4" data-bg="map-4"></div>
+				<div class="map__btn map__btn--5" data-save="Pays-bas" data-cloud="cloud--5"  data-open="pays--5" data-bg="map-5"></div>
+				<div class="map__btn map__btn--6" data-save="Angletere" data-cloud="cloud--6"  data-open="pays--6" data-bg="map-6"></div>
+				<div class="map__btn map__btn--7" data-save="Portugal" data-cloud="cloud--7"  data-open="pays--7" data-bg="map-7"></div>
+				<div class="map__btn map__btn--8" data-save="Allemagne" data-cloud="cloud--8"  data-open="pays--8" data-bg="map-8"></div>
+			</div>
+			<div class="map__overlay hidden"></div>
+		</div>
+		<div class="video-overlay hidden"></div>
+		<div class="logo">
+			<img src="assets/images/logo.png" alt="">
+		</div>
+		<div class="popin popin--video hidden">
+			<video src="" autoplay="true"></video>
+			<div class="popin__close"></div>
+		</div>
+<!-- PAYS 1 -->
+		<div class="pays pays--1">
+			<div class="popin popin--pays hidden" id="popin--pays--1">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">France</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__data">
+					<img src="assets/images/france-data.png" alt="">
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="Elec'car" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">Elec'car<br/><span>for 3 years</span></div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--2" data-save="Elec'weekend" data-open="popin--offre--2">
+							<div class="popin--pays__offre__title">Elec'weekend<br/><span>for 2 years</span></div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--3" data-save="Heating Package" data-open="popin--offre--3">
+							<div class="popin--pays__offre__title">All-Inclusive<br/><span>Heating Package</span></div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--4" data-save="manouvellechaudière" data-open="popin--offre--4" style=";">
+							<div class="popin--pays__offre__title"><span>manouvellechaudière.fr</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 two-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">ELEC'CAR <span>for 3 years</span></div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						<b>50% reduction</b> on the kWh during off-peak hours (2) for private owners of electric cars and plug-in hybrids.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									50% off the kWh price during off-peak hours for the entire house.
+								</li>
+								<li>
+									Three-year offer that you can cancel at any time.
+								</li>
+								<li>
+									Green electricity.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<p>
+								Offer price (not including taxes) and kWh rate (not including taxes) indexed on the package price and peak-time kWh rate of the regulated “Blue” tariff registered and published by EDF for the equivalent type of metering and output.
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/FR_Elec_car/engie02.jpg" alt="" class="full-width">
+								<img src="assets/images/FR_Elec_car/eleccar02.jpeg" alt="" class="half-width">
+								<img src="assets/images/FR_Elec_car/eleccar01.jpg" alt="" class="half-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--2 two-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">ELEC WEEKEND <span>for 2 years</span></div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Pay the electricity market price, indexed on the regulated tariff, at weekend rates for two years – guaranteed.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Services included.</li>
+								<li><b>Customer space:</b> personal space where customers can manage their account(s).</li>
+								<li><b>EcoConso Cap:</b> special service so customers can monitor their consumption and save on their energy bills.</li>
+								<li>Two-year contract, automatically renewable for periods of the same duration.</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<ul>
+								<li>Offer price (not including taxes) and kWh rate (not including taxes) indexed throughout the duration of the contract on the regulated electricity tariff (excluding changes in tax rates, duties and levies of any kind).</li>
+								<li>Electricity prices revised at the end of each contract term.</li>
+							</ul>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/FR_Elec_we/Elec_we_01.png" alt="" class="full-width">
+								<img src="assets/images/FR_Elec_we/Elec_we_03.jpg" alt="" class="full-width">
+								<img src="assets/images/FR_Elec_we/Elec_we_04.jpg" alt="" class="full-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 3 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--3 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title"><span>All-Inclusive Heating Package</span></div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						1 new condensing boiler, installation included + four years’ maintenance + 48-month interest-free finance = <b>the simplest solution for your comfort and your budget.</b>
+
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									<b>Easy:</b> purchase, installation, maintenance contract and warranty – everything is included!
+								</li>
+								<li>
+									<b>Cost-effective:</b> a fixed, monthly payment, interest-free credit for the purchase of the boiler, up to 20% energy savings, preferential energy pricing, eligible for 30% tax credit
+								</li>
+								<li>
+									<b>Reassuring::</b> a brand-new condensing boiler from your choice of four leading boiler brands.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<p>
+								The All-in-One Heating package starts at €65 a month for 48 months.
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/france/all-inclusive/Engie_Tout_inclus.jpg" alt="" class="full-width">
+								<a href="#" class="video-link" data-video="assets/images/france/all-inclusive/video.mp4">
+									<img src="assets/images/france/all-inclusive/video.jpg" alt="" class="full-width">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 3 -->
+<!-- POPIN OFFRE 4 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--4 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title"><span>manouvellechaudière.fr</span></div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						A heating expert on hand throughout the process to fit your new boiler.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									<b>A heating expert assigned to your project,</b> assisting you until the boiler is installed and running.
+								</li>
+								<li>
+									<b>Guaranteed lead times and competitive pricing:</b> you will receive a proposal within two hours and a visit to help prepare the boiler installation within two days.
+								</li>
+								<li>
+									<b>Boiler and installation guaranteed:</b> five-year warranty on parts, with maintenance and after-sales services provided by one of our 200 ENGIE Home Services agencies.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<p>
+								From €65 a month with the All-Inclusive Heating Package.
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/france/nouvellechaudiere/Engie_chaudiere3.jpeg" alt="" class="full-width">
+								<img src="assets/images/france/nouvellechaudiere/Engie_chaudiere2.png" alt="" class="half-width">
+								<img src="assets/images/france/nouvellechaudiere/Engie_chaudiere1.png" alt="" class="half-width">
+								<img src="assets/images/france/nouvellechaudiere/Engie_chaudiere4.png" alt="" class="half-width">
+								<img src="assets/images/france/nouvellechaudiere/Engie_chaudiere5.png" alt="" class="half-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 4 -->
+		</div>
+<!-- FIN PAYS 1 -->
+<!-- PAYS 2 -->
+		<div class="pays pays--2">
+			<div class="popin popin--pays hidden" id="popin--pays--2">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">BELGIUM</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__data">
+					<img src="assets/images/belgique-data.png" alt="">
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-2 popin--pays__offre--1" data-save="BOXX" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">BOXX</div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--2" data-save="SOLAR PANELS" data-open="popin--offre--2">
+							<div class="popin--pays__offre__title">SOLAR PANELS</div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--3" data-save="ENGIE Electrabel" data-open="popin--offre--3" style=";">
+							<div class="popin--pays__offre__title">ENGIE Electrabel<br/>Home CarPlug</div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--4" data-save="50Five" data-open="popin--offre--4" style=";">
+							<div class="popin--pays__offre__title">50Five</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 two-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">BOXX</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Save on your energy costs with Boxx, the <b>“digital brain”</b> for your home.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									Boxx tells you how much energy you’re using: it’s a smart thermostat that gives you a detailed picture of your total energy consumption – heating (natural gas) and electricity.
+								</li>
+								<li>
+									With Boxx, you can see your energy costs and consumption in real time, all the time: by day, week, month or year. And you can see how much you’re consuming in kWh and euros.
+								</li>
+								<li>
+									Use the mobile app to control your heating and appliances remotely so that your house is always warm and cosy when you get home. And you can even control additional appliances remotely using smart plugs and lights.
+								</li>
+							</ul>
+							<br/>
+							<h2>Price</h2>
+							<ul>
+								<li><b>Plan 1: Active energy contract:</b> Special rate for gas + electricity; Boxx and installation included.</li>
+								<li><b>Plan 2: Boxx only,</b> €298 package (including installation).</li>
+							</ul>
+							<p>
+								Subscription: all the benefits of Boxx for only €3.50 a month.
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/BE_Boxx/Boxx_01.png" alt="" class="full-width">
+								<img src="assets/images/BE_Boxx/Boxx_02.jpg" alt="" class="half-width">
+								<img src="assets/images/BE_Boxx/Boxx_03.jpg" alt="" class="half-width">
+								<img src="assets/images/BE_Boxx/Boxx_04.jpg" alt="" class="full-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 2 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--2 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">SOLAR PANELS</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Comprehensive, customised service delivered by ENGIE Electrabel before, during and after installation.</b>
+
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									Our valued partner, Sungevity, follows the strict quality standards devised and monitored by Engie Electrabel.
+								</li>
+								<li>
+									Installed by trusted and experienced experts using equipment covered by long-term guarantees.
+								</li>
+								<li>
+									Optimum output: the solar panels are monitored throughout their service life.
+								</li>
+								<li>
+									Solar panel output can be monitored on a daily basis.
+								</li>
+							</ul>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/BE_SolarPanel/SolarPanel_01.jpg" alt="" class="full-width">
+								<img src="assets/images/BE_SolarPanel/SolarPanel_02.jpg" alt="" class="full-width">
+								<img src="assets/images/BE_SolarPanel/SolarPanel_03.jpg" alt="" class="full-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 2 -->
+<!-- POPIN OFFRE 3 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--3 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">ENGIE Electrabel Home CarPlug<br/>the solution for charging your electric car.</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro" style="margin-bottom: 20px;">
+						Use a secure power point and dedicated line to recharge your 100% electric vehicle or rechargeable hybrid at home.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									A completely safe, one-stop solution for starting or programming the charging process in just one click.
+								</li>
+								<li>
+									Installed at a time that suits you by a specialist from the Engie group, and checked by an approved body.
+								</li>
+								<li>
+									Universal solution compatible with all types of rechargeable vehicle; can be installed inside or outside your home.
+								</li>
+								<li>
+									Comes with its own removable charging cable that is up to 60% faster than the cable supplied with your car.
+								</li>
+								<li>
+									Can be controlled remotely using your smartphone or via the internet with text or email alerts telling you that the charging process is complete or has been interrupted.
+								</li>
+								<li>
+									View your consumption and charging costs at any time using your smartphone or via the internet.
+								</li>
+							</ul>
+							<br/>
+							<h2>Price</h2>
+							<p>
+								€999 (including tax)
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/BE_CarPlug/CarPlug_01.jpg" alt="" class="full-width">
+								<img src="assets/images/BE_CarPlug/CarPlug_02.jpg" alt="" class="half-width">
+								<img src="assets/images/BE_CarPlug/CarPlug_05.jpg" alt="" class="half-width">
+								<img src="assets/images/BE_CarPlug/CarPlug_04.jpg" alt="" class="half-width">
+								<img src="assets/images/BE_CarPlug/CarPlug_03.jpg" alt="" class="half-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 3 -->
+<!-- POPIN OFFRE 4 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--4 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">50Five</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Smarten up your home, ease up your live, 50Five is the e-commerce channel of ENGIE. A Web experience and shop dedicated to smart home products and services.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Order at 4pm on working days and receive the product the day after </li>
+								<li>Free shipping</li>
+								<li>Support desk 7 days a week </li>
+								<li>Strong partnerships with industry leaders</li>
+								<li>Quick and simple payment options. </li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 4 -->
+		</div>
+<!-- FIN PAYS 2 -->
+<!-- PAYS 3 -->
+		<div class="pays pays--3">
+			<div class="popin popin--pays hidden" id="popin--pays--3">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">ITALY</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="Domusscheck" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">Domusscheck</div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--2" data-save="Engie Fit" data-open="popin--offre--2">
+							<div class="popin--pays__offre__title">Engie Fit</div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--3" data-save="COMBO" data-open="popin--offre--3">
+							<div class="popin--pays__offre__title">COMBO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 one-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">Domusscheck</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Take a closer look at how you consume energy and aim to improve things!<br/><br/>A special portal for customer commitment, offering contextual insights on their consumption patterns, tips to reduce their energy bill, games and customised offers.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									Access to customised insights, easy-to-read consumption charts and comparisons.
+								</li>
+								<li>
+									From detailed electricity and gas analyses to tips on how improve energy efficiency.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<ul>
+								<li>Free of charge for energy customers</li>
+								<li>Special dedicated offers</li>
+								<li>Make savings through better understanding of your energy usage and desegregation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 2 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--2 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">Engie Fit</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Use the Inside ENGIE app to check your energy bill, pay it…and take up the ENGIE challenge with ENGIE Fit!<br/><br/>Here’s the challenge: walk the number of steps indicated by Engie Fit and get a discount on your Engie bill to reward your efforts!
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>How it works</h2>
+							<p>Take positive action such as <b>reaching a goal of 10,000 steps walked every day.</b></p>
+							<ul>
+								<li>
+									Download the <b>Engie-electricity</b>, gas and services mobile app.
+								</li>
+								<li>
+									Access <b>Engie Fit</b> via Google or Apple Health and we will record your number of steps.
+								</li>
+								<li>
+									Accept the challenge, discover the goal of the month and get walking now!
+								</li>
+								<li>
+									Reached your goal? Then claim your bonus on your bill! Check your progress via <b>Engie-electricity, gas and services</b> and once you have reached the goal set, ask for a discount on your bill.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 2 -->
+<!-- POPIN OFFRE 3 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--3 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">COMBO</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						<b>Integrated Solutions bundle</b><br/>
+						A new, all-inclusive offer that combines gas, electricity and home energy services.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<ul>
+								<li>Gas & electricity+ home energy services = integrated solutions.</li>
+								<li>Energy + Service Combo ( gas + power + maintenance.</li>
+								<li>Comfort + Tech Combo  boiler + thermostat.</li>
+								<li>Service + Tech Combo  maintenance + thermostat.</li>
+							</ul>
+							<h2>Customer Benefits</h2>
+							<ul>
+								<li>
+									The family cuts its energy bill while boosting their energy efficiency.
+								</li>
+								<li>
+									Peace of mind with an all-inclusive offer.
+								</li>
+								<li>
+									Combines Commodities, Home Services, Comfort @ Home and Innovation.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 3 -->
+		</div>
+<!-- FIN PAYS 3 -->
+<!-- PAYS 4 -->
+		<div class="pays pays--4">
+			<div class="popin popin--pays hidden" id="popin--pays--4">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">ROMANIA</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="ENGIE MOBILE" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">ENGIE MOBILE</div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--2" data-save="THERMO SMART" data-open="popin--offre--2">
+							<div class="popin--pays__offre__title">THERMO SMART</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 one-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">ENGIE MOBILE</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Use the <b>engiemobile app</b> to get key information wherever you are, any time of day or night!
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									View charts comparing your consumption.
+								</li>
+								<li>
+									Invoices: See your billing history.
+								</li>
+								<li>Receive notifications and alerts on unpaid bills.</li>
+								<li>Readings: Submit your self-read meter readings.</li>
+								<li>Pay your natural gas bills directly from your mobile phone or find the nearest payment point.</li>
+								<li>Access different offers and services.</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<p>See <b>engiemobile.ro</b> for more information.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 2 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--2 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">THERMO SMART</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						<b>Thermo Smart heating system offer</b><br/>Access your heating system and control temperature settings using your smartphone or tablet.
+						
+
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<p><b>The Thermo Smart Package includes:</b></p>
+							<ul>
+								<li>
+									IT500 SALUS equipment and accessories
+								</li>
+								<li>
+									Boiler installation and synchronisation of the recording device, the chronothermostat settings and the smartphone or tablet
+								</li>
+							</ul>
+							<p><b>Smart Dual Package:</b> All the components of the Thermo Smart package plus an additional sensor if you want to control the temperature in two areas of the same home.</p>
+							<p><b>For air conditioning equipment: COOL SMART including Sensibo, operated</b> using your Smartphone or tablet.</p>
+							<h2>FEATURES</h2>
+							<ul>
+								<li><b>Auto-Away:</b> Never heat an empty house again! This feature automatically lowers the temperature when you are away.</li>
+								<li><b>Remote control: </b>Start or modify your programming remotely via your smartphone or computer.</li>
+								<li><b>Energy History:</b> Track your consumption because the more you know, the more energy you can save!</li>
+							</ul>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/RO_SmartTermo/SmartTermo_01.jpg" alt="" class="full-width">
+								<img src="assets/images/RO_SmartTermo/SmartTermo_02.png" alt="" class="full-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 2 -->
+		</div>
+<!-- FIN PAYS 4 -->
+<!-- PAYS 5 -->
+		<div class="pays pays--5">
+			<div class="popin popin--pays hidden" id="popin--pays--5">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">THE NETHERLANDS</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__data">
+					<img src="assets/images/netherlands-data.png" alt="">
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="ENGIE OPGEWEKT" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">ENGIE OPGEWEKT</div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--2" data-save="Smart Thermostat" data-open="popin--offre--2">
+							<div class="popin--pays__offre__title">Smart Thermostat</div>
+						</div>
+						<div class="popin--pays__offre picto-1 popin--pays__offre--3" data-save="Adviesportaal" data-open="popin--offre--3" style=";">
+							<div class="popin--pays__offre__title">Adviesportaal</div>
+						</div>
+						<div class="popin--pays__offre picto-2 popin--pays__offre--4" data-save="50Five" data-open="popin--offre--4" style=";">
+							<div class="popin--pays__offre__title">50Five</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 two-columns hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">ENGIE OPGEWEKT</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Use ENGIE Opgewekt and select your source of green power.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									With Engie “Aware”, the customer chooses whether to invest in wind, solar or hydro power. Engie provides the customer with a selection of sources every time.
+								</li>
+								<li>
+									Our green electricity is truly transparent, because Engie offers power straight from the source.
+								</li>
+								<li>
+									Engie has several wind and solar parks in the Netherlands, Belgium and Italy, and hydroelectric power plants in France.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<p>
+								All sources offer the same advantageous energy rates, and are on average €137 cheaper than other major energy suppliers in the Netherlands.
+							</p>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/HO_OPGEWEKT/OPGEWEKT_01.jpg" alt="" class="full-width">
+								<img src="assets/images/HO_OPGEWEKT/OPGEWEKT_02.jpg" alt="" class="half-width">
+								<img src="assets/images/HO_OPGEWEKT/OPGEWEKT_03.jpg" alt="" class="half-width">
+								<img src="assets/images/HO_OPGEWEKT/OPGEWEKT_04.jpg" alt="" class="half-width">
+								<img src="assets/images/HO_OPGEWEKT/OPGEWEKT_05.jpg" alt="" class="half-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+<!-- POPIN OFFRE 2 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--2 two-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">Smart Thermostat</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						ENGIE and Nest aim to help you save energy.<br/>
+						<b>Depending on your contract, benefit from special terms on Nest Thermostats.</b>
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									<b>Auto-Schedule:</b> No more confusing programming! Nest learns the temperatures you like and builds a personalised schedule for your home.
+								</li>
+								<li>
+									<b>Home/Away Assist:</b>	Don’t waste energy heating an empty home. Nest automatically adjusts to an energy –	saving temperature while you’re away.
+								</li>
+								<li>
+									<b>Energy History:</b> The more you know, the more you can save. See how much energy you’ve used over the last 10 days.
+								</li>
+								<li>
+									<b>Remote control:</b> Use your phone, tablet or laptop to change the temperature from anywhere.
+								</li>
+							</ul>
+							<h2>Price</h2>
+							<ul>
+								<li>1-year fixed energy rate and a Nest thermostat for €199</li>
+								<li>3-year fixed energy rate and a Nest thermostat for €49</li>
+								<li>4-year fixed energy rate and a free Nest thermostat</li>
+							</ul>
+						</div>
+						<div class="column column--right">
+							<div class="images">
+								<img src="assets/images/HO_Smart Thermostat/ST_01.png" alt="" class="full-width">
+								<img src="assets/images/HO_Smart Thermostat/ST_02.jpg" alt="" class="half-width">
+								<img src="assets/images/HO_Smart Thermostat/ST_03.jpg" alt="" class="half-width">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 2 -->
+<!-- POPIN OFFRE 3 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--3 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">Adviesportaal</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						The <b>“Engie Advice Portal”</b> offers automatic access to information about the house from the national land registration organisation. Customers can then use that information to receive personalised energy-saving advice applicable to the home.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>
+									Customers receive special tips on how to save even more energy: sometimes a simple action is all it takes to cut energy consumption.
+								</li>
+								<li>
+									Two steps to access customised advice.								
+								</li>
+								<li>
+									All the savings listed in a compelling report.
+								</li>
+								<li>
+									Tailored to how the house is used.
+								</li>
+							</ul>
+							<br/>
+							<br/>
+							<br/>
+							<h2>Price</h2>
+							<ul>
+								<li>Free of charge</li>
+								<li>A way of getting in touch with Engie Netherlands partners: Pluimers, Netfit, 50Five, SolarNRG and Wehkamp.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 3 -->
+<!-- POPIN OFFRE 4 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--4 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">50Five</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-2-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Smarten up your home, ease up your live, 50Five is the e-commerce channel of ENGIE. A Web experience and shop dedicated to smart home products and services.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Order at 4pm on working days and receive the product the day after </li>
+								<li>Free shipping</li>
+								<li>Support desk 7 days a week </li>
+								<li>Strong partnerships with industry leaders</li>
+								<li>Quick and simple payment options. </li>
+							</ul>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 4 -->
+		</div>
+<!-- FIN PAYS 5 -->
+<!-- PAYS 6 -->
+		<div class="pays pays--6">
+			<div class="popin popin--pays hidden" id="popin--pays--6">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">United Kingdom</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="50Five" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">50Five</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">50Five</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Smarten up your home, ease up your live, 50Five is the e-commerce channel of ENGIE. A Web experience and shop dedicated to smart home products and services.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Order at 4pm on working days and receive the product the day after </li>
+								<li>Free shipping</li>
+								<li>Support desk 7 days a week </li>
+								<li>Strong partnerships with industry leaders</li>
+								<li>Quick and simple payment options. </li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+		</div>
+<!-- FIN PAYS 6 -->
+
+<!-- PAYS 7 -->
+		<div class="pays pays--7">
+			<div class="popin popin--pays hidden" id="popin--pays--7">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">Portugal</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="Climaespaço HOME" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">Climaespaço HOME</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">Climaespaço HOME</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Climaespaço HOME offers optimised technical assistance for heating and air-conditioning systems.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Service is available 24/7.</li>
+								<li>We have a team of experienced technicians who are highly specialised in heating and air-conditioning systems.</li>
+								<li>Quick responses and solutions.</li>
+								<li>Quick and simple payment options. </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+		</div>
+<!-- FIN PAYS 7 -->
+<!-- PAYS 8 -->
+		<div class="pays pays--8">
+			<div class="popin popin--pays hidden" id="popin--pays--8">
+				<div class="popin--pays__header">
+					<div class="popin--pays__title">Germany</div>
+					<div class="popin__close"></div>
+				</div>
+				<div class="popin--pays__offres">
+					<div class="popin--pays__offres__title">SPECIAL OFFERS PROPOSED BY ENGIE</div>
+					<div class="popin--pays__offres__wrapper">
+						<div class="popin--pays__offre picto-1 popin--pays__offre--1" data-save="50Five" data-open="popin--offre--1">
+							<div class="popin--pays__offre__title">50Five</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- POPIN OFFRE 1 -->
+			<div class="popins--offre">
+				<div class="popin popin--offre popin--offre--1 one-column hidden">
+					<div class="popin--offre__header">
+						<div class="popin--offre__title">50Five</div>
+						<div class="popin__close"></div>
+					</div>
+					<div class="popin--offre__picto">
+						<img src="assets/images/offre-picto-1-select.png" alt="">
+					</div>
+					<div class="popin--offre__intro">
+						Smarten up your home, ease up your live, 50Five is the e-commerce channel of ENGIE. A Web experience and shop dedicated to smart home products and services.
+					</div>
+					<div class="columns">
+						<div class="column column--left">
+							<h2>Features</h2>
+							<ul>
+								<li>Order at 4pm on working days and receive the product the day after </li>
+								<li>Free shipping</li>
+								<li>Support desk 7 days a week </li>
+								<li>Strong partnerships with industry leaders</li>
+								<li>Quick and simple payment options. </li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+<!-- FIN POPIN OFFRE 1 -->
+		</div>
+<!-- FIN PAYS 8 -->
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+		<script src="assets/js/save.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">  
+      $(document).ready(function() {
+          APP.initPage();
+      });
+      APP.initialize();
+    </script>
+	</body>
+</html>
