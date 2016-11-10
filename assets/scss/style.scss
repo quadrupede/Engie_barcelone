@@ -185,13 +185,13 @@ html {
 			    width: 5%;
     height: 25.27777777777778%;
     top: 67.5%;
-    left: 33.5%;
+    left: 33.2%;
     @include animation('cloud 10s infinite linear');
 		}
 
 		&--2 {
 			background-image: url(../images/belgique-cloud.png);
-	    width: 3.8%;
+	    width: 4.5%;
     height: 34%;
     top: 60%;
     left: 37%;
@@ -200,7 +200,7 @@ html {
 
 		&--3 {
 			background-image: url(../images/italy-cloud.png);
-    width: 4%;
+    width: 5%;
     height: 34%;
     top: 78.27%;
     left: 45%;
@@ -209,7 +209,7 @@ html {
 
 		&--4 {
 			background-image: url(../images/roumanie-cloud.png);
- width: 4.2%;
+     width: 5.2%;
     height: 34%;
     top: 70.87%;
     left: 58%;
